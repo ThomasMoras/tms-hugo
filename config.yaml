@@ -41,7 +41,7 @@ enableEmoji: true
 # Site parameters
 params:
   # GitHub repo of your site
-  gitRepo: https://thomasmoras.github.io/tms-hugo/
+  gitRepo: https://thomasmoras.github.io
 
   # Default branch of your Git repo
   gitBranch: main
