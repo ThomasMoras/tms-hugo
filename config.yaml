@@ -1,4 +1,4 @@
-baseUrl: "https://thomasmoras.github.io"
+baseUrl: "https://thomasmoras.github.io/tms-hugo/"
 languageCode: en-us
 title: "Thomas Moras"
 theme: "toha"
@@ -41,7 +41,7 @@ enableEmoji: true
 # Site parameters
 params:
   # GitHub repo of your site
-  gitRepo: https://thomasmoras.github.io
+  gitRepo: https://thomasmoras.github.io/tms-hugo/
 
   # Default branch of your Git repo
   gitBranch: main
