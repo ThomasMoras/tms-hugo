@@ -11,8 +11,8 @@ section:
 designation: Software Engineer
 # your company information
 company:
-  name: Example Co.
-  url: "https://www.example.com"
+  name: Ineo Nucléaire
+  url: "https://www.equans.fr/votre-activite/infrastructures-energetiques/nucleaire-environnements-sensibles/integrateur-de"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
@@ -25,15 +25,18 @@ summary: 'I am a passionate software engineer with x years of working experience
 socialLinks:
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/example"
+  url: "https://github.com/ThomasMoras"
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
+- name: Developer Skills
+  percentage: 65
+  color: green
 - name: Leadership
-  percentage: 85
+  percentage: 63
   color: blue
 - name: Team Work
-  percentage: 90
+  percentage: 81
   color: yellow
