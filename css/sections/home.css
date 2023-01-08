@@ -34,10 +34,30 @@
   }
 }
 
+
 .content {
   position: relative;
   top: -65%;
   height: 60%;
+  /* custom code */
+  width: 30%;
+  /* background: linear-gradient(0deg, #00000000 50%, #011e24cc 50%); */
+  /* background-color: #011e24cc; */
+  /* border-radius: 10%; */
+  background: linear-gradient(0deg, #00000000 40%, #011e24cc 60%);
+  padding: 0.5%;
+  /* position: relative;
+  border: 4px solid transparent;
+  border-radius: 16px;
+  background: linear-gradient(orange, violet);
+  background-clip: padding-box;
+  padding: 10px; */
+  /* just to show box-shadow still works fine */
+  /* box-shadow: 0 3px 9px black, inset 0 0 9px white; */
+ 
+  /* background:
+    radial-gradient(at 50% 0, rgb(0, 0, 0), transparent 70%),
+    linear-gradient(0deg, transparent, transparent 50%) bottom; */
 }
 
 .home img {
