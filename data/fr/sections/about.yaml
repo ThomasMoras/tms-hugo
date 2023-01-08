@@ -12,31 +12,41 @@ designation: Développeur Full Stack
 # your company information
 company:
   name: Ineo Nucléaire
-  url: "https://www.nuclearvalley.com/annuaire/ineo-nucleaire-equans-france/"
+  url: "https://www.equans.fr/votre-activite/infrastructures-energetiques/nucleaire-environnements-sensibles/integrateur-de"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: "I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc."
+summary: "<p> Passionné et à l'écoute des <strong> nouvelles technologies </strong> (blockchain, IA, etc.).</p>
+J'ai <strong>5 ans</strong> d'expériences dans le développement web via la digitalisation de processus métiers, la conception d'application en gérant l'ensemble de son cycle de vie
+(conception, mise en production, maintenance et évolution).
+<p></p>
+<p>Technologies utilisées :</p>
+<ul> 
+<li>Solutions \"low code\" (BPM MoovApps, Power BI)</li> 
+<li>Langage de programmation : Java, HTML, CSS, JavaScript, C#, SQL.</li>
+<li>PostGreSQL, SQL Server, Docker, Git, Obsidian</li>
+</ul>
+<p> Je m'interesse actuellement aux <strong> technologies web 3 (Solidity, Web 3 js, Cosmos SDK) </strong> ainsi que sur d'autres frameworks tels que <strong> Vues JS, Svelte, GraphQL. </strong></p>"
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
   - name: Github
     icon: "fab fa-github"
-    url: "https://www.github.com/example"
+    url: "https://github.com/ThomasMoras"
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
-  - name: Leadership
-    percentage: 85
-    color: blue
-  - name: Team Work
-    percentage: 90
-    color: yellow
-  - name: Test
-    percentage: 50
-    color: qqqq
+- name: Developer Skills
+  percentage: 70
+  color: green
+- name: Leadership
+  percentage: 65
+  color: blue
+- name: Team Work
+  percentage: 80
+  color: yellow

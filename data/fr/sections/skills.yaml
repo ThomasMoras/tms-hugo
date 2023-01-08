@@ -11,16 +11,34 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+- name: MoovApps
+  logo: "/images/sections/skills/moovapps.png"
+  summary: "Business Process Management (BPM) permettant de créer des applications sous forme de workflows et disposant d'un SDK Java"
+  url: "https://www.moovapps.com/"
 
-- name: Go Development
-  logo: "/images/sections/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+- name: Java
+  logo: "/images/sections/skills/java.png"
+  summary: ""
+  url: "https://dev.java/learn/"
 
-- name: Cloud Computing
-  logo: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+- name: REST API
+  logo: "/images/sections/skills/postman.png"
+  summary: ""
+  url: ""
+
+
+- name: WCS / WPF (.NET)
+  logo: "/images/sections/skills/c_sharp.svg"
+  summary: ""
+  url: ""
+
+
+
+# - name: Go Development
+#   logo: "/images/sections/skills/go.png"
+#   summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+#   url: "https://golang.org/"
+
+# - name: Cloud Computing
+#   logo: "/images/sections/skills/cloud.png"
+#   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."

@@ -7,7 +7,7 @@ image: "./images/author/author.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "moras.thomas@gmail.com"
-  phone: "+33658988169"
+  #phone: "+33658988169"
   # stack-overflow:
   #   icon: stack-overflow
   #   url: "https://stackoverflow.com/users/1/exampleUser"
@@ -15,7 +15,7 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I am a full stack developer
+  - I'm a fullstack developer
   - I build apps using Java, C#, HTML, CSS, JS
   - And also low code apps, like BPM, Power BI, etc.
-  - I am interesting in web 3 & crypto technologies
+  - I'm currently interesting in blockchains technologies & web 3
