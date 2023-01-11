@@ -9,11 +9,13 @@ debug: true
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   fr:
-    contentDir: content/fr
+    baseURL: https://thomasmoras.github.io/tms-hugo
+    title: En Français
     languageName: Français
     weight: 1
   en:
-    contentDir: content/en
+    baseURL: https://thomasmoras.github.io/tms-hugo/en
+    title: In English
     languageName: English
     weight: 2
 

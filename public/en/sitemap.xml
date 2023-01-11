@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thomasmoras.github.io/en/categories/</loc>
+    <loc>https://thomasmoras.github.io/tms-hugo/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://thomasmoras.github.io/fr/categories/"
+                href="https://thomasmoras.github.io/tms-hugo/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thomasmoras.github.io/en/categories/"
+                href="https://thomasmoras.github.io/tms-hugo/en/categories/"
                 />
   </url><url>
-    <loc>https://thomasmoras.github.io/en/tags/</loc>
+    <loc>https://thomasmoras.github.io/tms-hugo/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://thomasmoras.github.io/fr/tags/"
+                href="https://thomasmoras.github.io/tms-hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thomasmoras.github.io/en/tags/"
+                href="https://thomasmoras.github.io/tms-hugo/en/"
                 />
   </url><url>
-    <loc>https://thomasmoras.github.io/en/</loc>
+    <loc>https://thomasmoras.github.io/tms-hugo/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://thomasmoras.github.io/fr/"
+                href="https://thomasmoras.github.io/tms-hugo/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://thomasmoras.github.io/en/"
+                href="https://thomasmoras.github.io/tms-hugo/en/tags/"
                 />
   </url>
 </urlset>

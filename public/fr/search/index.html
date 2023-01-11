@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Search Results</title>
+    <title>Resultados de Búsqueda</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -28,26 +28,27 @@
 
 
 
-<meta property="og:title" content="Search Results" />
-<meta property="og:description" content="This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```" />
+<meta property="og:title" content="Resultados de Búsqueda" />
+<meta property="og:description" content="Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño search relacionada.
+No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html
+Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.
+Esta implementación utiliza Fusejs, jquery y mark.js
+Configuración inicial La búsqueda depende del tipo de contenido de salida adicional de JSON en config." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://thomasmoras.github.io/tms-hugo/fr/search/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://thomasmoras.github.io/tms-hugo/search/" /><meta property="article:section" content="notes" />
 <meta property="article:published_time" content="2010-06-08T08:06:25+06:00" />
-<meta property="article:modified_time" content="2010-06-08T08:06:25+06:00" />
+<meta property="article:modified_time" content="2010-06-08T08:06:25+06:00" /><meta property="og:site_name" content="En Français" />
 
 
 
     
     
-    <link rel="stylesheet" href="../../css/layouts/list.css">
-    <link rel="stylesheet" href="../../css/navigators/sidebar.css">
-    
-    <link rel="stylesheet" href="../../css/style.css"/>
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+  />
+  <link rel="stylesheet" href="../../css/layouts/notes.css">
+  <link rel="stylesheet" href="../../css/navigators/sidebar.css">
 
 
     
@@ -93,41 +94,14 @@ Initial setup Search depends on additional output content type of JSON in config
       <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="../../tms-hugo/fr">
-      Thomas Moras</a>
+    <a class="navbar-brand" href="../../tms-hugo">
+      En Français</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
-      
-        
-
-  
-
-
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      
-        
-        <span class="flag-icon flag-icon-fr"></span>
-      
-      Français
-    </a>
-    <div class="dropdown-menu" aria-labelledby="languageSelector">
-      
-        <a class="dropdown-item nav-link languages-item" href="../../tms-hugo/fr/search">
-          
-            
-            <span class="flag-icon flag-icon-gb"></span>
-          
-          English
-        </a>
-      
-    </div>
-</li>
-
       
       
         <li class="nav-item dropdown">
@@ -171,12 +145,12 @@ Initial setup Search depends on additional output content type of JSON in config
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="../../tms-hugo/fr/search">
+        <form class="mx-auto" method="get" action="../../tms-hugo/search">
           <input type="text" name="keyword" value="" placeholder="Chercher" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="../../tms-hugo/fr/posts" data-filter="all">Articles</a></li>
+            <li id="list-heading"><a href="../../tms-hugo/notes" data-filter="all">Remarques</a></li>
             <div class="subtree">
                 
 
@@ -192,30 +166,40 @@ Initial setup Search depends on additional output content type of JSON in config
       
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
-    <div class="container-fluid post-card-holder" id="post-card-holder">
-      <div id="search-results">
+    <div class="container-fluid note-card-holder" id="note-card-holder">
+      <p>Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño <code>search</code> relacionada.</p>
+<p>No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html</p>
+<p>Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.</p>
+<p>Esta implementación utiliza Fusejs, jquery y mark.js</p>
+<h2 id="configuración-inicial">Configuración inicial</h2>
+<p>La búsqueda depende del tipo de contenido de salida adicional de JSON en config.toml</p>
+<p>```
+[outputs]
+home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;]
+```</p>
+<h2 id="búsqueda-de-archivos-adicionales">Búsqueda de archivos adicionales</h2>
+<p>Para buscar campos adicionales definidos en el front matter, debes añadirlo en 2 lugares.</p>
+<h3 id="editar-layouts_defaultindexjson">Editar layouts/_default/index.JSON</h3>
+<p>Esto expone los valores en /index.json: por ejemplo, para agregar <code>categories</code>
+```
+&hellip;
+&ldquo;contents&rdquo;:{{ .Content | plainify | jsonify }}
+{{ if .Params.tags }},
+&ldquo;tags&rdquo;:{{ .Params.tags | jsonify }}{{end}},
+&ldquo;categories&rdquo; : {{ .Params.categories | jsonify }},
+&hellip;
+```</p>
+<h3 id="editar-las-opciones-de-fusejs-para-buscar">Editar las opciones de fuse.js para buscar</h3>
+<p><code>static/js/search.js</code>
+```
+keys: [
+&ldquo;title&rdquo;,
+&ldquo;contents&rdquo;,
+&ldquo;tags&rdquo;,
+&ldquo;categories&rdquo;
+]
+```</p>
 
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="post-card">
-            <a href="${link}" class="post-card-link">
-              <div class="card" style="min-height: 352px;"><a href="${link}" class="post-card-link">
-                <div class="card-head">
-                  <img class="card-img-top" src="${hero}" alt="Card Heading Image">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">${title}</h5>
-                  <p class="card-text post-summary">${summary}</p>
-                </div>
-                <div class="card-footer">
-                  <span class="float-left">${date}</span>
-                  <a href="${link}" class="float-right btn btn-outline-info btn-sm">Read</a>
-                </div>
-              </div>
-	          </a>
-          </div>
-        </script>
-
-      </div>
     </div>
   </div>
 </section>
@@ -296,7 +280,7 @@ Initial setup Search depends on additional output content type of JSON in config
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo/fr/#about">A propos</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo#about">A propos</a>
                 </li>
               
               
@@ -305,7 +289,7 @@ Initial setup Search depends on additional output content type of JSON in config
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo/fr/#skills">Compétences</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo#skills">Compétences</a>
                 </li>
               
               
@@ -314,7 +298,7 @@ Initial setup Search depends on additional output content type of JSON in config
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo/fr/#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo#experiences">Experiences</a>
                 </li>
               
               
@@ -323,7 +307,7 @@ Initial setup Search depends on additional output content type of JSON in config
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo/fr/#projects">Projets</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io/tms-hugo#projects">Projets</a>
                 </li>
               
             
@@ -341,23 +325,9 @@ Initial setup Search depends on additional output content type of JSON in config
           <ul>
             
               
-                <li><a href=mailto:johndoe@example.com target="_blank" rel="noopener">
-                  <span><i class="fas fa-envelope"></i></span> <span>johndoe@example.com</span>
+                <li><a href=mailto:moras.thomas@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>moras.thomas@gmail.com</span>
                 </a></li>
-              
-            
-              
-                <li><span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span></li>
-              
-            
-              
-                <li>
-                  
-                  <a href=https://stackoverflow.com/users/1/exampleUser target="_blank" rel="noopener">
-                    <span><i class=fab&#32;fa-stack-overflow></i></span> <span>ExampleUser</span>
-                  </a>
-                  
-                </li>
               
             
           </ul>
@@ -372,7 +342,7 @@ Initial setup Search depends on additional output content type of JSON in config
               <form method='post' action='https://blogtrottr.com'>
               <div class="form-group">
               <input type='email' class="form-control" name='btr_email' placeholder="Entrez une adresse e-mail"/><br />
-              <input type='hidden' name='btr_url' value='https://thomasmoras.github.io/tms-hugo/fr/index.xml' />
+              <input type='hidden' name='btr_url' value='https://thomasmoras.github.io/tms-hugoindex.xml' />
               <input type='hidden' name='schedule_type' value='1' />
               <small id="emailHelp" class="form-text text-muted">En renseignant votre adresse e-mail, vous acceptez de recevoir la newsletter de ce site.</small>
               <button type="submit" class="btn btn-info"> Envoyer </button>
@@ -427,9 +397,13 @@ Initial setup Search depends on additional output content type of JSON in config
 
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="https://thomasmoras.github.io/js/search.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script src="../../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../../js/note.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
 
 
     
