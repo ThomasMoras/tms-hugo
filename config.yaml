@@ -9,9 +9,11 @@ debug: true
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   fr:
+    contentDir: content/fr
     languageName: Français
     weight: 1
   en:
+    contentDir: content/en
     languageName: English
     weight: 2
 
