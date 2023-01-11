@@ -17,7 +17,7 @@ languages:
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 DefaultContentLanguage: fr
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 IsMultiLingual : true
 
 # Allow raw html in markdown file
