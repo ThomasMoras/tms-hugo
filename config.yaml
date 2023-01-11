@@ -1,22 +1,26 @@
 baseUrl: "https://thomasmoras.github.io"
 languageCode: en-us
-defaultContentLanguage: fr
 title: "Thomas Moras"
 theme: "toha"
 relativeURLs: true
+debug: true
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   fr:
+    contentDir: content/fr
     languageName: Français
     weight: 1
   en:
+    contentDir: content/en
     languageName: English
     weight: 2
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
-# DefaultContentLanguage: bn
+DefaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+IsMultiLingual : true
 
 # Allow raw html in markdown file
 markup:
