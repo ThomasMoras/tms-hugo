@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>404 Page not found</title>
+    <title>Search Results</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -28,16 +28,26 @@
 
 
 
-<meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://thomasmoras.github.io/en/404.html" />
+<meta property="og:title" content="Search Results" />
+<meta property="og:description" content="This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thomasmoras.github.io/search/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2010-06-08T08:06:25+06:00" />
+<meta property="article:modified_time" content="2010-06-08T08:06:25+06:00" />
 
 
 
     
     
-    <link rel="stylesheet" href="../css/404.css">
+    <link rel="stylesheet" href="../css/layouts/list.css">
+    <link rel="stylesheet" href="../css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="../css/style.css"/>
+
 
 
     
@@ -83,7 +93,7 @@
       <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="../en">
+    <a class="navbar-brand" href="../">
       Thomas Moras</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
@@ -125,29 +135,63 @@
 
 
       
-       
-
       
-      
-
-
-
-
-
-
+  
+  
+    
   
 
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="../search">
+          <input type="text" name="keyword" value="" placeholder="Chercher" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="../posts" data-filter="all">Articles</a></li>
+            <div class="subtree">
+                
 
-
-<div class="container">
-    <div class="notFound">
-        <img src="../images/404_huf404c6818e5475c7870a4722b4efea20_110323_1500x0_resize_box_3.png" alt="Page Not Found">
-        <div class="message">
-            <h1>404</h1>
-            <h4>The page you are looking for is not there yet.</h4>
+            </div>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      <div id="search-results">
+
+        <script id="search-result-template" type="text/x-js-template">
+          <div class="post-card">
+            <a href="${link}" class="post-card-link">
+              <div class="card" style="min-height: 352px;"><a href="${link}" class="post-card-link">
+                <div class="card-head">
+                  <img class="card-img-top" src="${hero}" alt="Card Heading Image">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">${title}</h5>
+                  <p class="card-text post-summary">${summary}</p>
+                </div>
+                <div class="card-footer">
+                  <span class="float-left">${date}</span>
+                  <a href="${link}" class="float-right btn btn-outline-info btn-sm">Read</a>
+                </div>
+              </div>
+	          </a>
+          </div>
+        </script>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 
       
@@ -225,7 +269,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/en/#about">About</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io#about">A propos</a>
                 </li>
               
               
@@ -234,7 +278,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/en/#skills">Skills</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io#skills">Compétences</a>
                 </li>
               
               
@@ -243,7 +287,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/en/#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io#experiences">Experiences</a>
                 </li>
               
               
@@ -252,7 +296,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://thomasmoras.github.io/en/#projects">Projects</a>
+                  <a class="smooth-scroll" href="https://thomasmoras.github.io#projects">Projets</a>
                 </li>
               
             
@@ -266,7 +310,7 @@
         
         
         <div class="col-md-4 col-sm-12">
-          <h5>Contact me:</h5>
+          <h5>Contactez moi :</h5>
           <ul>
             
               
@@ -282,15 +326,15 @@
         
           
           <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
+            <p>Restez à jour par e-mail</p>
             
               <form method='post' action='https://blogtrottr.com'>
               <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='https://thomasmoras.github.io/en/index.xml' />
+              <input type='email' class="form-control" name='btr_email' placeholder="Entrez une adresse e-mail"/><br />
+              <input type='hidden' name='btr_url' value='https://thomasmoras.github.ioindex.xml' />
               <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
+              <small id="emailHelp" class="form-text text-muted">En renseignant votre adresse e-mail, vous acceptez de recevoir la newsletter de ce site.</small>
+              <button type="submit" class="btn btn-info"> Envoyer </button>
               </div>
               </form>
             
@@ -311,7 +355,7 @@
         </div>
         <div class="col-md-4 text-center">© 2022 Copyright.</div>
         <div class="col-md-4 text-right">
-          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Alimenté par
           <img
             src="../images/hugo-logo.svg"
             alt="Hugo Logo"
@@ -341,7 +385,11 @@
 
 
     
-     
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+<script src="https://thomasmoras.github.io/js/search.js"></script>
+
 
     
 </body>
