@@ -36,9 +36,15 @@
 }
 
 .content {
-  position: relative;
-  top: -65%;
-  height: 60%;
+	position: relative;
+	top: -80%;
+	height: 37%;
+	width: 40%;
+	background-color: #000000a3;
+	/* border-radius: 10%; */
+	padding: 20px 0 0 0;
+	border-style: groove;
+	border-radius: 70% 50%/ 20% 50%;
 }
 
 .home img {
@@ -67,6 +73,7 @@
   color: #f9fafc;
   font-size: 1.5rem;
   bottom: 0;
+  bottom: -113%;
 }
 
 .bounce {
