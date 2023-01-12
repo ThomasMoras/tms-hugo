@@ -1,41 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://thomasmoras.github.io/tms-hugo/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://thomasmoras.github.io/tms-hugo/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thomasmoras.github.io/tms-hugo/en/categories/"
-                />
-  </url><url>
-    <loc>https://thomasmoras.github.io/tms-hugo/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://thomasmoras.github.io/tms-hugo/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thomasmoras.github.io/tms-hugo/en/tags/"
-                />
-  </url><url>
-    <loc>https://thomasmoras.github.io/tms-hugo/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://thomasmoras.github.io/tms-hugo/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thomasmoras.github.io/tms-hugo/en/"
-                />
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://thomasmoras.github.io/tms-hugo/fr/sitemap.xml</loc>
+    
+      <lastmod>2010-06-08T08:06:25+06:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://thomasmoras.github.io/tms-hugo/en/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>

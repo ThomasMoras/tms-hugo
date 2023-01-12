@@ -1,4 +1,4 @@
-baseUrl: "https://thomasmoras.github.io/tms-hugo"
+baseUrl: "https://thomasmoras.github.io"
 languageCode: en-us
 title: "Thomas Moras"
 theme: "toha"
@@ -12,14 +12,15 @@ IsMultiLingual : true
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   fr:
+    baseUrl: "https://thomasmoras.github.io/tms-hugo/fr"
     contentDir: content/fr
     languageName: Français
     weight: 1
   en:
+    baseUrl: "https://thomasmoras.github.io/tms-hugo/en"
     contentDir: content/en
     languageName: English
     weight: 2
-
 
 
 # Allow raw html in markdown file
