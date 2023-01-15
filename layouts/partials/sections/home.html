@@ -32,7 +32,7 @@
   {{ $authorImage = $authorImage.Fit "148x148" }}
 {{ end }}
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
-{{ $src := resources.Get $backgroundImage }}
+{{ $src := "https://thomasmoras.github.io/tms-hugo/images/site/background.png" }}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
@@ -97,7 +97,7 @@
     }
     @media (min-width: 1501px) { /* or 301 if you want really the same as previously.  */
       #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $src.RelPermalink }}');
+          background-image: url('https://thomasmoras.github.io/tms-hugo/images/site/background.png');
         }
     }
     </style>
