@@ -32,11 +32,7 @@
   {{ $authorImage = $authorImage.Fit "148x148" }}
 {{ end }}
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
-{{ $src := resources.Get $backgroundImage }}
-
-{{ if $src.Contains "https://thomasmoras.github.io/images/site/background.png" }}
-  {{ $src = "https://thomasmoras.github.io/tms-hugo/images/site/background.png" }}
-{{ end }}
+{{ $src := "https://thomasmoras.github.io/tms-hugo/images/site/background.png" }}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
