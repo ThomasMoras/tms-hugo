@@ -38,13 +38,10 @@
 .content {
 	position: relative;
 	top: -80%;
-	height: 37%;
-	width: 40%;
+	width: 35%;
 	background-color: #000000a3;
-	/* border-radius: 10%; */
-	padding: 20px 0 0 0;
-	border-style: groove;
-	border-radius: 70% 50%/ 20% 50%;
+	border-radius: 15px;
+	padding: 1%;
 }
 
 .home img {
@@ -69,11 +66,10 @@
 }
 
 .arrow {
-  position: absolute;
+  position: fixed;
   color: #f9fafc;
   font-size: 1.5rem;
-  bottom: 0;
-  bottom: -113%;
+  bottom: 2%;
 }
 
 .bounce {

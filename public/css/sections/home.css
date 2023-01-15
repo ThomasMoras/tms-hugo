@@ -69,11 +69,10 @@
 }
 
 .arrow {
-  position: absolute;
+  position: fixed;
   color: #f9fafc;
   font-size: 1.5rem;
   bottom: 0;
-  bottom: -113%;
 }
 
 .bounce {
