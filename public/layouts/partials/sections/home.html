@@ -78,27 +78,27 @@
   <style>
     /* 0 to 299 */
     #homePageBackgroundImageDivStyled {
-        background-image: url('{{ strings.TrimSuffix "/" site.BaseURL }}/{{ $src }}')
+        background-image: url('https://thomasmoras.github.io/tms-hugo/images/background.png')
     }
     /* 300 to X */
     @media (min-width: 500px) and (max-width: 800px) { /* or 301 if you want really the same as previously.  */
       #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $small.RelPermalink }}');
+        background-image: url('https://thomasmoras.github.io/tms-hugo/images/background.png')
         }
     }
     @media (min-width: 801px) and (max-width: 1200px) { /* or 301 if you want really the same as previously.  */
       #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $medium.RelPermalink }}');
+        background-image: url('{https://thomasmoras.github.io/tms-hugo/images/background.png')
         }
     }
     @media (min-width: 1201px) and (max-width: 1500px) { /* or 301 if you want really the same as previously.  */
       #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $large.RelPermalink }}');
+        background-image: url('https://thomasmoras.github.io/tms-hugo/images/background.png')
         }
     }
     @media (min-width: 1501px) { /* or 301 if you want really the same as previously.  */
       #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ $src.RelPermalink }}');
+        background-image: url('{https://thomasmoras.github.io/tms-hugo/images/background.png')
         }
     }
     </style>
