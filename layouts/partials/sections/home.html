@@ -15,7 +15,7 @@
   {{ $sections = (index site.Data site.Language.Lang).sections }}
 {{ end }}
 
-{{ $backgroundImage:= "./images/default-background.jpg" }}
+{{ $backgroundImage:= "/images/default-background.jpg" }}
 {{ if site.Params.background }}
   {{ $backgroundImage = site.Params.background }}
 {{ end }}
@@ -32,7 +32,7 @@
   {{ $authorImage = $authorImage.Fit "148x148" }}
 {{ end }}
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
-{{ $src := "https://thomasmoras.github.io/tms-hugo/images/site/background.png" }}
+{{ $src := resources.Get $backgroundImage }}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
@@ -77,7 +77,7 @@
   <style>
     /* 0 to 299 */
     #homePageBackgroundImageDivStyled {
-      background-image: url('{{ $tiny.RelPermalink }}');
+      background-image: url('{{ toto');
     }
     /* 300 to X */
     @media (min-width: 500px) and (max-width: 800px) { /* or 301 if you want really the same as previously.  */
@@ -97,7 +97,7 @@
     }
     @media (min-width: 1501px) { /* or 301 if you want really the same as previously.  */
       #homePageBackgroundImageDivStyled {   
-          background-image: url('https://thomasmoras.github.io/tms-hugo/images/site/background.png');
+          background-image: url('{{ $src.RelPermalink }}');
         }
     }
     </style>
