@@ -73,11 +73,17 @@
   {{ $large := $src}}
 {{ end }}
 
+{{ if in $.Site.BaseURL "localhost" }}
+  {{$src := $.Site.BaseURL }}
+{{end}}
+{{ printf "%#v"  $src.Permalink }}
+
 <div class="container-fluid home" id="home">
   <style>
     /* 0 to 299 */
+
     #homePageBackgroundImageDivStyled {
-      background-image: url('{{ site.BaseURL }}/tms-hugo{{ $tiny.RelPermalink }} ');
+      background-image: url('{{ $tiny.Permalink }}');
     }
     /* 300 to X */
     @media (min-width: 500px) and (max-width: 800px) { /* or 301 if you want really the same as previously.  */
@@ -97,7 +103,7 @@
     }
     @media (min-width: 1501px) { /* or 301 if you want really the same as previously.  */
       #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ site.BaseURL }}/tms-hugo{{ $src.RelPermalink }}');
+          background-image: url('{{ $src.Permalink }}');
         }
     }
     </style>
