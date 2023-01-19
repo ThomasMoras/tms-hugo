@@ -73,19 +73,21 @@
   {{ $large := $src}}
 {{ end }}
 
-{{ $a :=  $tiny.Permalink }}
+{{ $a :=  $tiny.RelPermalink }}
 {{ $b :=  $small.RelPermalink }}
 {{ $c :=  $medium.RelPermalink }}
 {{ $d :=  $large.RelPermalink }}
 {{ $e :=  $src.RelPermalink }}
 
-{{ if not (in $.Site.BaseURL "localhost") }}
-    {{ $a := (print (print $.Site.BaseURL "tms-hugo") $src.RelPermalink) }}
-    {{ $b := (print (print $.Site.BaseURL "tms-hugo") $src.RelPermalink) }}
-    {{ $c := (print (print $.Site.BaseURL "tms-hugo") $src.RelPermalink) }}
-    {{ $d := (print (print $.Site.BaseURL "tms-hugo") $src.RelPermalink) }}
-    {{ $e := (print (print $.Site.BaseURL "tms-hugo") $src.RelPermalink) }}
-{{end}}
+
+{{ if not (in (.Site.BaseURL | string) "localhost") }}
+{{ $a := (print (print $.Site.BaseURL "tms-hugo") $tiny.RelPermalink) }}
+{{ $b := (print (print $.Site.BaseURL "tms-hugo") $small.RelPermalink) }}
+{{ $c := (print (print $.Site.BaseURL "tms-hugo") $medium.RelPermalink) }}
+{{ $d := (print (print $.Site.BaseURL "tms-hugo") $large.RelPermalink) }}
+{{ $e := (print (print $.Site.BaseURL "tms-hugo") $src.RelPermalink) }}
+{{ end }}
+
 {{/*  
 {{ printf "%#v"  $src.Permalink }}
 <br>
