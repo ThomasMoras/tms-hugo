@@ -26,7 +26,7 @@
   {{ if and $mainLogo (ne $mainLogo.MediaType.SubType "svg") }}
     {{ $mainLogo = $mainLogo.Resize "42x" }}
   {{ end }}
-  {{ $mainLogo = $mainLogo.RelPermalink}}
+  {{ $mainLogo = $mainLogo.Permalink}}
 {{ end }}
 
 {{ if $invertedLogo }}
@@ -34,7 +34,7 @@
   {{ if and $invertedLogo (ne $invertedLogo.MediaType.SubType "svg")}}
     {{ $invertedLogo = $invertedLogo.Resize "42x" }}
   {{ end }}
-  {{ $invertedLogo = $invertedLogo.RelPermalink}}
+  {{ $invertedLogo = $invertedLogo.Permalink}}
 {{ end }}
 
 {{ $customMenus := site.Params.customMenus }}
