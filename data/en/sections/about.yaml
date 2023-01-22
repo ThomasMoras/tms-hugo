@@ -18,7 +18,17 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: ''
+summary: "<p> Passionate about and attentive to <strong>new technologies</strong> (blockchain, AI, etc.).</p>
+I have <strong>5 years</strong> of experience in web development via the digitalization of business processes, application design by managing its entire life cycle
+(design, production, maintenance and evolution).
+<p></p>
+<p>Technologies used:</p>
+<ul>
+<li>\"Low code\" solutions (BPM MoovApps, Power BI)</li>
+<li>Programming language: Java, HTML, CSS, JavaScript, C#, SQL.</li>
+<li>PostGreSQL, SQL Server, Docker, Git, Obsidian</li>
+</ul>
+<p> I am currently interested in <strong> web 3 technologies (Solidity, Web 3 js, Cosmos SDK) </strong> as well as other frameworks such as <strong> Vues JS, Svelte, GraphQL. </strong></p>"
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

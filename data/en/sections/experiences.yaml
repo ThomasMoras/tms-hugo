@@ -11,32 +11,38 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
+    name: Ineo Nucléaire, EQUANS, Groupe Bouygue
+    url: "https://www.equans.fr/votre-activite/infrastructures-energetiques/nucleaire-environnements-sensibles/integrateur-de"
+    location: Lyon, 7 Rue Alexander Flemming, 69007
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: Integrator of multi-technical services in the nuclear field
   positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
+  - designation: FullStack Developer
+    start: November 2018
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
+    - Digitization & production of business processes
+    - Specific developments in Java by overloading the BPM MoovApps
+    - Technical referent of the team
+    - Developing a C# REST API client using WCF / WPF
+    - Implementation of data flows & Power BI KPIs
+    - Tools => Intellij, Maven, Postman, WINSCP, Git, SQL Server, Microsoft Suite, MoovApps Platform, PostGreSQL / Power BI, Obsidian
+    - Appendix  => Docker (compose), Node JS, Azure Cloud
 
 - company:
-    name: PreExample Co.
-    url: "https://www.preexample.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: Pegasus Development
+    url: "https://www.groupe-pegasus.com/presentation.html"
+    location: 81 Rue de Gerland, 69007 Lyon
+    overview: Real estate developer specializing in turnkey projects (CPI, VEFA, block sale).
   positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+  - designation: Assistant IT project manager (work-study)
+    start: October 2017
+    end: November 2018
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - Development of an internal ERP (front and back)
+    - Angular (5/6)
+    - API C# (.NET, Web API 2.0, Entity Framework 6, MySQL)
+    - GitHub
+    - Slack

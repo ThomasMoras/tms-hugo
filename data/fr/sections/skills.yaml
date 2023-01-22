@@ -18,18 +18,18 @@ skills:
 
 - name: Java
   logo: "/images/sections/skills/java.png"
-  summary: ""
+  summary: "Développement de classe d'extension et mise en place de l'architecture de surcharge de l'environnement MoovApps SDK"
   url: "https://dev.java/learn/"
 
 - name: REST API
   logo: "/images/sections/skills/postman.png"
-  summary: ""
+  summary: "Consommation de divers API : MoovApps, Fuzzeo (solution de classeur de chantier), YouSign (signature éléctronique), etc."
   url: ""
 
 
-- name: WCS / WPF (.NET)
+- name: WCF / WPF (.NET)
   logo: "/images/sections/skills/c_sharp.svg"
-  summary: ""
+  summary: "Développement d'un client consommant une API REST via un service WCF"
   url: ""
 
 
